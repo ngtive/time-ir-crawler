@@ -1,0 +1,38 @@
+{
+  "requestsFinished": 12,
+  "requestsFailed": 0,
+  "requestsRetries": 1,
+  "requestsFailedPerMinute": 0,
+  "requestsFinishedPerMinute": 114,
+  "requestMinDurationMillis": 1119,
+  "requestMaxDurationMillis": 1806,
+  "requestTotalFailedDurationMillis": 0,
+  "requestTotalFinishedDurationMillis": 20086,
+  "crawlerStartedAt": "2023-08-03T12:41:46.102Z",
+  "crawlerFinishedAt": "2023-08-03T12:41:52.414Z",
+  "statsPersistedAt": "2023-08-03T12:41:52.414Z",
+  "crawlerRuntimeMillis": 6326,
+  "crawlerLastStartTimestamp": 1691066506088,
+  "requestRetryHistogram": [
+    11,
+    1
+  ],
+  "statsId": 0,
+  "requestAvgFailedDurationMillis": null,
+  "requestAvgFinishedDurationMillis": 1674,
+  "requestTotalDurationMillis": 20086,
+  "requestsTotal": 12,
+  "requestsWithStatusCode": {},
+  "errors": {},
+  "retryErrors": {
+    "<anonymous>": {
+      "ERR_CRYPTO_OPERATION_FAILED": {
+        "RequestError": {
+          "Failed to set ECDH curve": {
+            "count": 1
+          }
+        }
+      }
+    }
+  }
+}
