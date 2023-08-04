@@ -5,11 +5,14 @@
     "description": "This is an example of a Crawlee project.",
     "dependencies": {
         "crawlee": "^3.0.0",
-        "playwright": "*"
+        "node-schedule": "^2.1.1",
+        "playwright": "*",
+        "redis": "^4.6.7"
     },
     "devDependencies": {
         "@apify/tsconfig": "^0.1.0",
         "@types/node": "^18.0.0",
+        "@types/node-schedule": "^2.1.0",
         "jalali-moment": "^3.3.11",
         "ts-node": "^10.8.0",
         "typescript": "^5.0.0"

@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="229942b5-d85c-4520-8905-d0a3c97cbcdf" name="Changes" comment="" />
+    <list default="true" id="229942b5-d85c-4520-8905-d0a3c97cbcdf" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/time-ir-crawler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redis.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/key_value_stores/default/SDK_CRAWLER_STATISTICS_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/key_value_stores/default/SDK_CRAWLER_STATISTICS_0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/key_value_stores/default/SDK_SESSION_POOL_STATE.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/key_value_stores/default/SDK_SESSION_POOL_STATE.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/request_queues/default/5dp1jAFIvIZoIQ0.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/request_queues/default/5dp1jAFIvIZoIQ0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/request_queues/default/83mK8tgyPzAdx9E.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/request_queues/default/83mK8tgyPzAdx9E.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/request_queues/default/AZ36S6xtB6aF2xe.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/request_queues/default/AZ36S6xtB6aF2xe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/request_queues/default/JyOciott0IsS3iK.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/request_queues/default/JyOciott0IsS3iK.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/request_queues/default/L6Nmy4XHlYAzZTS.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/request_queues/default/L6Nmy4XHlYAzZTS.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/request_queues/default/O9WzyxYOUJaBkNn.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/request_queues/default/O9WzyxYOUJaBkNn.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/request_queues/default/VmMXi7502lCtFJv.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/request_queues/default/VmMXi7502lCtFJv.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/request_queues/default/VvV9cPuoWpYqSN8.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/request_queues/default/VvV9cPuoWpYqSN8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/request_queues/default/WuMyiTiBo7hk0OW.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/request_queues/default/WuMyiTiBo7hk0OW.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/request_queues/default/c5IAMaIJ8jLbFxC.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/request_queues/default/c5IAMaIJ8jLbFxC.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/request_queues/default/p8ZanvTubJpSDvI.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/request_queues/default/p8ZanvTubJpSDvI.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/request_queues/default/r2mJfEe7SkNC1zc.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/request_queues/default/r2mJfEe7SkNC1zc.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,31 +56,72 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/amir/Documents/time-ir-crawler",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/amir/Documents/time-ir-crawler/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/amir/Documents/time-ir-crawler&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/amir/Documents/time-ir-crawler/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="npm.start">
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="rabbitmq" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.rabittmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="rabittmq" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.redis: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="redis" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -69,21 +134,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start:prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start:prod" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.start:prod" />
-        <item itemvalue="npm.build" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.redis: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.rabittmq: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -96,11 +153,25 @@
       <option name="presentableId" value="Default" />
       <updated>1690972467627</updated>
       <workItem from="1690972468768" duration="12936000" />
-      <workItem from="1691064658677" duration="1930000" />
+      <workItem from="1691064658677" duration="2552000" />
+      <workItem from="1691157693261" duration="4196000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1691066601074</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691066601074</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
 </project>
