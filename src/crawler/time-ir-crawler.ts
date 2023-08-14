@@ -3,6 +3,8 @@ import {replacePersianNumbers} from "../helper.js";
 import {monthsByName} from "../variables/index.js";
 import moment from "jalali-moment";
 import redisClient from '../redis.js';
+import {EventInterface} from "../io/event.i";
+export const crawledData: EventInterface[] = [];
 
 export const crawler = new CheerioCrawler({
     async requestHandler({$, log}) {
@@ -24,12 +26,14 @@ export const crawler = new CheerioCrawler({
                 let eventMoment = moment.from(`${currentYear}-${monthNumber}-${day}`, 'fa', 'YYYY-M-D');
 
 
+
                 let e = {
                     date: eventMoment.format('jYYYY/jMM/jDD'),
                     event: event.trim(),
+                    is_holiday: !!$(el).attr('class')?.includes('eventHoliday')
                 };
 
-                redisClient.set(e.date, e.event);
+                crawledData.push(e);
             }
         });
     },

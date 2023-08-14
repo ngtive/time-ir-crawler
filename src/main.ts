@@ -1,11 +1,13 @@
 import {monthsByNumber} from "./variables/index.js";
-import {crawler} from "./crawler/time-ir-crawler.js";
+import {crawledData, crawler} from "./crawler/time-ir-crawler.js";
 import moment from "jalali-moment";
 import {purgeDefaultStorages} from "crawlee";
-import redisClient from "./redis.js";
+// import redisClient from "./redis.js";
+import fs from 'fs';
+
 
 await purgeDefaultStorages();
-await redisClient.connect();
+// await redisClient.connect();
 const now = moment();
 monthsByNumber.forEach(async (_, key) => {
     await crawler.addRequests([
@@ -23,4 +25,5 @@ monthsByNumber.forEach(async (_, key) => {
 })
 
 await crawler.run();
-await redisClient.disconnect();
+fs.writeFileSync('data.json', JSON.stringify(crawledData));
+// await redisClient.disconnect();
